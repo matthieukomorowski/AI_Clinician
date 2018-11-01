@@ -18,8 +18,7 @@ This repository contains PostgreSQL and Matlab code to:
 
 External files and toolboxes used:
 
-MDP toolbox (some functions modified):  https://uk.mathworks.com/matlabcentral/fileexchange/25786-markov-decision-processes--mdp--toolbox
+- MDP toolbox (some functions modified):  https://uk.mathworks.com/matlabcentral/fileexchange/25786-markov-decision-processes--mdp--toolbox
+- Fastknnsearch : https://uk.mathworks.com/matlabcentral/fileexchange/19345-efficient-k-nearest-neighbor-search-using-jit
 
-Fastknnsearch : https://uk.mathworks.com/matlabcentral/fileexchange/19345-efficient-k-nearest-neighbor-search-using-jit
-
-References for the sepsis-3 definition: Singer, JAMA 2016 http://jamanetwork.com/journals/jama/fullarticle/2492881
+Reference for the sepsis-3 definition: Singer, JAMA 2016 http://jamanetwork.com/journals/jama/fullarticle/2492881

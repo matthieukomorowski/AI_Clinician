@@ -1,0 +1,78 @@
+The Markov Decision Processes (MDP) toolbox proposes functions related to the resolution
+of discrete-time Markov Decision Processes : finite horizon, value iteration, 
+policy iteration, linear programming algorithms with some variants.
+
+The toolbox was developped by the decision team of the Biometry and 
+Artificial Intelligence Unit of INRA Toulouse (France).
+See <http://www.inra.fr/mia/T/MDPtoolbox> for more information.
+
+
+NOTATION
+states: set of {1, 2, ..., S}
+actions: set of {1, 2, ..., A}
+transitions: P(s,s',a) is the probability to reach state s' when the system is 
+in state s and action a is performed by the decision maker
+rewards: R(s,s',a) is the reward obtained when the system is in state s on decision 
+epoch t and is in state s' at decision epoch t+1, with action a performed
+R(s,a): reward when the system is in state s at decision epoch t and action a is 
+performed by the decision maker
+
+
+The HTML toolbox documentation describing the use of the m-functions can be visualized
+ with a navigator. For MATLAB navigator (used for MATLAB help), in the 'File' menu, 
+choose the 'Open' item. Open the sub-directory documentation. 
+Select the item 'All Files (*.*)' for the attribut 'Files of type'. 
+Then select the file DOCUMENTATION.html and open it.
+The directory documentation contains all the pages describing in HTML the functions.
+
+
+The initial version 1.0 (developped with MATLAB 6.0) was released on July 31, 2001.
+The second version 2.0 was released on February 4, 2005. 
+It handles sparse matrices for P(:,:,a), R(:,:,a), PR(:,:) and contains an example.
+
+The third version 3.0 (tested on MATLAB 7.7) was released on September 21, 2009. 
+It includes Reinforcement Learning based functions.
+
+
+Change Log for version 3.0 (September 24, 2009)
+* rename mdp_rand in mdp_example_rand
+* add mdp_example_forest
+* rename mdp_eval_policy in mdp_eval_policy_matrix
+* add mdp_eval_policy_iterative and mdp_computePpolicyPRpolicy
+* add mdp_eval_policy_optimality.m
+* add mdp_eval_policy_TD_0.m
+* add mdp_Q_learning.m
+* remove MDP_COMPILE.m
+* add TEST.m
+* take into account the various forms of P and R in all the toolbox functions
+* minor debug and improvement (take into account all forms of P and R, 
+  evaluate the number of action with P sparse by length(P) ...)
+
+
+Change Log for version 3.0b (November 9, 2009)
+* BSD license (MATLAB Central's request)
+* use speye instead of sparse(eye(S,S)) or eye(S)
+* update web site addresses
+* correct spelling mistakes
+
+Change Log for version 4.0 (October 31, 2012) 
+* compatible with GNU Octave (version 3.6)
+* modification of evaluation of mdp_relative_value_iteration: 
+  average reward is now returned
+* modification of the evaluation of mdp_value_iteration and mdp_value_iterationGS: 
+  V (last value, not the optimum value) is not returned anymore and 
+  the value 0 is not allowed anymore for epsilon (it was a problem 
+  when a mawimum number of iteration was not provided)
+* modification of mdp_eval_policy_iterative, to provide epsilon-optimal V 
+  (that is |Vn - Vpolicy|<epsilon) the difference between two iterations 
+  has to be compared to [(1-discount)/discount]
+* improve code (suppress existence's test of mdp_VERBOSE after declaration of global)
+Notes:
+The randi function must be locally define for GNU Octave release before 3.6.
+The linprog function required by mdp_LP is only defined in the MATLAB Optimization Toolbox.
+
+
+Change Log for version 4.0.1 (January 20, 2014) 
+* add a QuickStart.pdf
+* update the DOCUMENTATION page for Matlab and GNU Octave
+* debug test of values of policy given in argument

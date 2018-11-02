@@ -11,7 +11,7 @@ The 2 datasets used in the research are:
 - MIMIC-III : https://mimic.physionet.org/
 - eICU-RI: not publicly available in full, subset available here: http://eicu-crd.mit.edu/
 
-Cohort definition: all adult patients fulfillinf the sepsis-3 definition: http://jamanetwork.com/journals/jama/fullarticle/2492881
+Cohort definition: all adult patients fulfilling the sepsis-3 definition: http://jamanetwork.com/journals/jama/fullarticle/2492881
 The unique identifiers for these patients in both datasets are provided, along with a detailed desciption of the datasets.
 
 This repository contains Matlab code to:

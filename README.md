@@ -3,7 +3,7 @@
 
 Code for a reinforcement learning model applied to the management of intravenous fluids and vasopressors in patients with sepsis in intensive care.
 
-Related to Publication: https://www.nature.com/articles/s41591-018-0213-5
+Related to publication: https://www.nature.com/articles/s41591-018-0213-5
 
 Author: Dr Matthieu Komorowski, Imperial College London, 2016-2018 - m.komorowski14@imperial.ac.uk
 

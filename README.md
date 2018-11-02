@@ -15,10 +15,10 @@ Cohort definition: all adult patients fulfilling the sepsis-3 definition: http:/
 The unique identifiers for these patients in both datasets are provided, along with a detailed desciption of the datasets.
 
 This repository contains Matlab code to:
-1.	build 500 different discrete state and action MDP models from the MIMIC-III training dataset
-2.	select the best policy from off-policy evaluation
-3.	test this optimal policy on the eICU-RI dataset
-4.	compute the main results and key figures
+1.	build 500 different discrete state and action MDP models from the MIMIC-III training dataset;
+2.	select the best policy from off-policy evaluation on the MIMIC-III validation set;
+3.	test this optimal policy on the eICU-RI dataset;
+4.	compute the main results and key figures.
 
 External files and toolboxes used:
 

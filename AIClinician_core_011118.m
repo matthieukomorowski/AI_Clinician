@@ -1,11 +1,15 @@
 %% AI Clinician core code
 % (c) Matthieu Komorowski 2016-2018
 % version 01 Nov 18
-% Builds 500 models, records best models along the way from OFF-POLICY POLICY EVALUATION (WIS)
+% Builds 500 models using MIMIC-III training data
+% Records best candidate models along the way from off-policy policy evaluation on MIMIC-III validation data
+% Tests the best model on eRI data
+
 
 % TAKES
-        % valid50 = n*56 table with raw values from eICU
         % reformat5t = n*62 table with raw values from MIMIC
+        % valid50 = n*56 table with raw values from eICU
+        
 
 % GENERATES
         % MIMICraw = MIMIC RAW DATA m*47 array with columns in right order
@@ -805,9 +809,9 @@ set(gca,'FontSize',12)
   
 
 disp('##########   Clinician   ##########')
-disp('  on vaso     ¦ on low fluid')
+disp('  on vaso     Â¦ on low fluid')
 disp([sum(sum(counts(:,2:5))) sum(sum(counts(4:5,:)))])
-disp('  on vaso and low fluids    ¦ on no vaso and high fluid')
+disp('  on vaso and low fluids    Â¦ on no vaso and high fluid')
 disp([sum(sum(counts(3:5,2:5)))  sum(sum(counts(1:2,1)))])
 disp('  on low vaso ')
 disp([sum(sum(counts(:,2:4)))  ])
@@ -829,9 +833,9 @@ for k = 1:length(b)
 end
 
 disp('##########   AI Clinician   ##########')
-disp('  on vaso     ¦ on low fluid')
+disp('  on vaso     Â¦ on low fluid')
 disp([sum(sum(counts(:,2:5))) sum(sum(counts(4:5,:)))])
-disp('  on vaso and low fluids    ¦ on no vaso and high fluid')
+disp('  on vaso and low fluids    Â¦ on no vaso and high fluid')
 disp([sum(sum(counts(3:5,2:5)))  sum(sum(counts(1:2,1)))])
 disp('  on low vaso ')
 disp([sum(sum(counts(:,2:4)))  ])

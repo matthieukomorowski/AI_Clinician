@@ -5,16 +5,16 @@ Code for a reinforcement learning model applied to the management of intravenous
 
 Related to publication: https://www.nature.com/articles/s41591-018-0213-5
 
-Author: Dr Matthieu Komorowski, Imperial College London, 2016-2018 - m.komorowski14@imperial.ac.uk
+Author: Dr Matthieu Komorowski, Imperial College London, 2015-2018 - m.komorowski14@imperial.ac.uk
 
 The 2 datasets used in the research are:
 - MIMIC-III : https://mimic.physionet.org/
 - eICU-RI: not publicly available in full, subset available here: http://eicu-crd.mit.edu/
 
 Cohort definition: all adult patients fulfilling the sepsis-3 definition: http://jamanetwork.com/journals/jama/fullarticle/2492881
-The unique identifiers for these patients in both datasets are provided (patientIDs_MIMIC3.csv and patientIDs_eRI.csv), along with a detailed desciption of the datasets (Dataset description Komorowski 011118.xlsx).
+The unique identifiers for these patients in both datasets are provided (patientIDs_MIMIC3.csv and patientIDs_eRI.csv), along with a detailed desciption of the datasets (Dataset description Komorowski 111118.xlsx).
 
-This repository contains the Matlab code (AIClinician_core_011118.m) to:
+This repository contains the Matlab code (AIClinician_core_111118.m) to:
 1.	build 500 different discrete state and action MDP models from the MIMIC-III training dataset;
 2.	select the best policy from off-policy evaluation on the MIMIC-III validation set;
 3.	test this optimal policy on the eICU-RI dataset;

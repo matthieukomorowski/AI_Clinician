@@ -12,7 +12,7 @@ The 2 datasets used in the research are:
 - eICU-RI: not publicly available in full, subset available here: http://eicu-crd.mit.edu/
 
 Cohort definition: all adult patients fulfilling the sepsis-3 definition: http://jamanetwork.com/journals/jama/fullarticle/2492881
-The unique identifiers for these patients in both datasets are provided (patientIDs_MIMIC3.csv and patientIDs_eRI.csv), along with a detailed desciption of the datasets (Dataset description Komorowski 111118.xlsx).
+The unique identifiers for these patients in both datasets are provided (patientIDs_MIMIC3.csv and patientIDs_eRI.csv), along with a detailed desciption of the datasets (Dataset description Komorowski 111118.xlsx). Note: you'll need to add 200,000 to all the patient identifiers in patientIDs_MIMIC3 to match the numbering found in the initiail database.
 
 This repository contains the Matlab code (AIClinician_core_111118.m) to:
 1.	build 500 different discrete state and action MDP models from the MIMIC-III training dataset;

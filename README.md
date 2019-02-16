@@ -15,14 +15,19 @@ Cohort definition: all adult patients fulfilling the sepsis-3 definition: http:/
 
 
 This repository contains:
-I. the Jupyter notebook to perform data extraction in MIMIC-III
-II. the Matlab code to identify the cohort of patients with sepsis in MIMIC-III
-III. the Matlab code to re-create the MIMIC-III dataset
-IV. the Matlab code (AIClinician_core_111118.m) to:
+
+I. the Jupyter notebook to perform data extraction in MIMIC-III (AIClinician_Data_extract_MIMIC3_140219.ipynb)
+
+II. the Matlab code to identify the cohort of patients with sepsis in MIMIC-III (AIClinician_sepsis3_def_140219.m)
+
+III. the Matlab code to re-create the MIMIC-III dataset (AIClinician_MIMIC3_dataset_140219.m)
+
+IV. the Matlab code (AIClinician_core_140219.m) to:
 1.	build 500 different discrete state and action MDP models from the MIMIC-III training dataset;
 2.	select the best policy from off-policy evaluation on the MIMIC-III validation set;
 3.	test this optimal policy on the eICU-RI dataset;
 4.	compute the main results and key figures.
+
 V. Additional files:
 1. The unique identifiers for these patients in both datasets are provided (patientIDs_MIMIC3.csv and patientIDs_eRI.csv). Note: you'll need to add 200,000 to all the patient identifiers in patientIDs_MIMIC3 to match the numbering found in the initiail database.
 2. A detailed desciption of the datasets (Dataset description Komorowski 111118.xlsx). 

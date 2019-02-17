@@ -33,7 +33,8 @@ V. Additional files:
 1. The unique identifiers for these patients in both datasets are provided (patientIDs_MIMIC3.csv and patientIDs_eRI.csv). Note: you'll need to add 200,000 to all the patient identifiers in patientIDs_MIMIC3 to match the numbering found in the initiail database.
 2. A detailed desciption of the datasets (Dataset description Komorowski 111118.xlsx).
 3. deloutabove.m and deloutbelow.m : custom functions to delete outliers.
-4. reference_matrices.mat contains the mapping of item identifiers and concepts, and data for sample-and-hold  technique.
+4. fixgaps.m : custom function for linear interpolation.
+5. reference_matrices.mat contains the mapping of item identifiers and concepts, and data for sample-and-hold  technique.
 
 
 External files and toolboxes used:

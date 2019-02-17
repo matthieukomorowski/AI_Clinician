@@ -18,11 +18,11 @@ This repository contains:
 
 I. the Jupyter notebook to perform data extraction in MIMIC-III (AIClinician_Data_extract_MIMIC3_140219.ipynb)
 
-II. the Matlab code to identify the cohort of patients with sepsis in MIMIC-III (AIClinician_sepsis3_def_140219.m)
+II. the Matlab code to identify the cohort of patients with sepsis in MIMIC-III (AIClinician_sepsis3_def_160219.m)
 
-III. the Matlab code to re-create the MIMIC-III dataset (AIClinician_MIMIC3_dataset_140219.m)
+III. the Matlab code to re-create the MIMIC-III dataset (AIClinician_MIMIC3_dataset_160219.m)
 
-IV. the Matlab code (AIClinician_core_140219.m) to:
+IV. the Matlab code (AIClinician_core_160219.m) to:
 1.	build 500 different discrete state and action MDP models from the MIMIC-III training dataset;
 2.	select the best policy from off-policy evaluation on the MIMIC-III validation set;
 3.	test this optimal policy on the eICU-RI dataset;

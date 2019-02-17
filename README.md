@@ -28,9 +28,11 @@ IV. the Matlab code (AIClinician_core_160219.m) to:
 3.	test this optimal policy on the eICU-RI dataset;
 4.	compute the main results and key figures.
 
+
 V. Additional files:
 1. The unique identifiers for these patients in both datasets are provided (patientIDs_MIMIC3.csv and patientIDs_eRI.csv). Note: you'll need to add 200,000 to all the patient identifiers in patientIDs_MIMIC3 to match the numbering found in the initiail database.
-2. A detailed desciption of the datasets (Dataset description Komorowski 111118.xlsx). 
+2. A detailed desciption of the datasets (Dataset description Komorowski 111118.xlsx).
+3. deloutabove.m and deloutbelow.m : custom functions to delete outliers.
 
 
 External files and toolboxes used:

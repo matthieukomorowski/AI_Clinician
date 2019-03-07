@@ -26,7 +26,9 @@
 
 % This code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 % without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE
-        
+
+% Note: The size of the cohort will depend on which version of MIMIC-III is used.
+% The original cohort from the 2018 Nature Medicine publication was built using MIMIC-III v1.3.
 
 % ############################  MODEL PARAMETERS   #####################################
 
@@ -813,9 +815,9 @@ set(gca,'FontSize',12)
   
 
 disp('##########   Clinician   ##########')
-disp('  on vaso     ¦ on low fluid')
+disp('  on vaso     Â¦ on low fluid')
 disp([sum(sum(counts(:,2:5))) sum(sum(counts(4:5,:)))])
-disp('  on vaso and low fluids    ¦ on no vaso and high fluid')
+disp('  on vaso and low fluids    Â¦ on no vaso and high fluid')
 disp([sum(sum(counts(3:5,2:5)))  sum(sum(counts(1:2,1)))])
 disp('  on low vaso ')
 disp([sum(sum(counts(:,2:4)))  ])
@@ -837,9 +839,9 @@ for k = 1:length(b)
 end
 
 disp('##########   AI Clinician   ##########')
-disp('  on vaso     ¦ on low fluid')
+disp('  on vaso     Â¦ on low fluid')
 disp([sum(sum(counts(:,2:5))) sum(sum(counts(4:5,:)))])
-disp('  on vaso and low fluids    ¦ on no vaso and high fluid')
+disp('  on vaso and low fluids    Â¦ on no vaso and high fluid')
 disp([sum(sum(counts(3:5,2:5)))  sum(sum(counts(1:2,1)))])
 disp('  on low vaso ')
 disp([sum(sum(counts(:,2:4)))  ])

@@ -35,6 +35,7 @@ V. Additional files:
 3. deloutabove.m and deloutbelow.m : custom functions to delete outliers.
 4. fixgaps.m : custom function for linear interpolation.
 5. reference_matrices.mat contains the mapping of item identifiers and concepts, and data for sample-and-hold  technique.
+6. SAH.m : custom function to perform sample-and-hold.
 
 
 External files and toolboxes used:

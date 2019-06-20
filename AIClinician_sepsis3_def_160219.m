@@ -178,7 +178,7 @@ sum(onset(:,3)>0)
 % this will accelerate process later
 
 tic
-for i=10001:size(labU,1)
+for i=1:size(labU,1)
 [~,locb]=ismember(Reflabs,labU(i,3));
 labU(i,3)=find(max(locb')');
 end
@@ -791,7 +791,7 @@ reformat4t.mechvent(isnan(reformat4t.mechvent))=0;
 reformat4t.mechvent(reformat4t.mechvent>0)=1;
 
 % FIX Elixhauser missing values
-reformat5t.elixhauser(isnan(reformat5t.elixhauser))=nanmedian(reformat5t.elixhauser);  %use the median value / only a few missing data points 
+reformat4t.elixhauser(isnan(reformat4t.elixhauser))=nanmedian(reformat4t.elixhauser);  %use the median value / only a few missing data points 
 
 %vasopressors / no NAN
 a=find(ismember(reformat4t.Properties.VariableNames,{'median_dose_vaso'}));

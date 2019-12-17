@@ -178,7 +178,7 @@ sum(onset(:,3)>0)
 % this will accelerate process later
 
 tic
-for i=10001:size(labU,1)
+for i=1:size(labU,1)
 [~,locb]=ismember(Reflabs,labU(i,3));
 labU(i,3)=find(max(locb')');
 end
